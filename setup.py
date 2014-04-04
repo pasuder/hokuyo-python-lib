@@ -17,7 +17,7 @@ setup(
                  'hokuyo.tools': 'src/hokuyo/tools',
                  'hokuyo.tests': 'src/hokuyo/tests'},
     install_requires=required,
-    version='1.1',
+    version='1.2',
     description='Hokuyo driver in python',
     author=u'Paweł Suder',
     author_email='pawel@suder.info',

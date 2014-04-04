@@ -1,8 +1,8 @@
 import serial
 
-from navi.driver import hokuyo
+from hokuyo.driver import hokuyo
 
-from navi.tools import serial_port
+from hokuyo.tools import serial_port
 
 
 uart_port = '/dev/ttyACM0'

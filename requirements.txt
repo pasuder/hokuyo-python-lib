@@ -1,0 +1,3 @@
+mockito
+pyserial
+protobuf

@@ -102,4 +102,4 @@ class Hokuyo(object):
         index = 0
         while number_of_scans == 0 or index > 0:
             index -= 1
-            yield self.__get_scan(start_step, stop_step, cluster_count)
+            yield self.__get_scan(start_step, stop_step, cluster_count, True)

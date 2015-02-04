@@ -1,7 +1,6 @@
 import serial
 
 from hokuyo.driver import hokuyo
-
 from hokuyo.tools import serial_port
 
 
@@ -11,7 +10,7 @@ uart_speed = 19200
 __author__ = 'paoolo'
 
 if __name__ == '__main__':
-    laser_serial = serial.Serial(port=uart_port, baudrate=uart_speed, timeout=0.1)
+    laser_serial = serial.Serial(port=uart_port, baudrate=uart_speed, timeout=0.5)
     port = serial_port.SerialPort(laser_serial)
 
     laser = hokuyo.Hokuyo(port)

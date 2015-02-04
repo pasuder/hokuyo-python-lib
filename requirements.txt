@@ -1,3 +1,2 @@
-mockito
 pyserial
 protobuf

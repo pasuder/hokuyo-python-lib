@@ -4,6 +4,7 @@
 try:
     from setuptools import setup
 except ImportError:
+    print 'No setuptools installed, use distutils'
     from distutils.core import setup
 
 with open('requirements.txt') as f:
@@ -11,19 +12,28 @@ with open('requirements.txt') as f:
 
 setup(
     name='hokuyo-python-lib',
-    packages=['hokuyo', 'hokuyo.driver', 'hokuyo.tools', 'hokuyo.tests'],
-    package_dir={'hokuyo': 'src/hokuyo',
-                 'hokuyo.driver': 'src/hokuyo/driver',
-                 'hokuyo.tools': 'src/hokuyo/tools',
-                 'hokuyo.tests': 'src/hokuyo/tests'},
+    packages=[
+        'hokuyo',
+        'hokuyo.driver',
+        'hokuyo.tools',
+        'hokuyo.tests'
+    ],
+    package_dir={
+        'hokuyo': 'src/hokuyo',
+        'hokuyo.driver': 'src/hokuyo/driver',
+        'hokuyo.tools': 'src/hokuyo/tools',
+        'hokuyo.tests': 'src/hokuyo/tests'
+    },
     install_requires=required,
-    version='1.2',
+    version='1.3',
     description='Hokuyo driver in python',
     author=u'Paweł Suder',
     author_email='pawel@suder.info',
-    url='http://dev.suder.info/',
-    download_url='http://github.com/dev-hokuyo/hokuyo-python-lib',
-    keywords=['hokuyo'],
+    url='http://project-capo.github.io/',
+    download_url='http://github.com/old-paoolo/hokuyo-python-lib',
+    keywords=[
+        'hokuyo'
+    ],
     classifiers=[
         'Programming Language :: Python',
         'Development Status :: 4 - Beta',

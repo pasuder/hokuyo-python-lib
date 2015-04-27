@@ -8,7 +8,7 @@ __author__ = 'paoolo'
 
 
 def chunks(l, n):
-    for i in xrange(0, len(l), n):
+    for i in range(0, len(l), n):
         yield l[i:i + n]
 
 
@@ -193,7 +193,7 @@ class Hokuyo(object):
         assert result[-2:] == '\n\n'
 
         result = result.split('\n')
-        result = map(lambda line: line[:-1], result)
+        result = [line[:-1] for line in result]
         result = ''.join(result)
 
         i = 0
@@ -304,5 +304,5 @@ class Hokuyo(object):
     @staticmethod
     def __parse_scan(scan):
         angles = sorted(scan.keys())
-        distances = map(scan.get, angles)
+        distances = list(map(scan.get, angles))
         return angles, distances

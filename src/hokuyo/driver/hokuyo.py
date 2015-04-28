@@ -31,6 +31,7 @@ class Hokuyo(object):
     VERSION_INFO = 'VV\n'
     SENSOR_STATE = 'II\n'
     SENSOR_SPECS = 'PP\n'
+    SET_SCIP2    = 'SCIP2.0\n'
 
     CHARS_PER_VALUE = 3.0
     CHARS_PER_LINE = 66.0
@@ -154,11 +155,16 @@ class Hokuyo(object):
     def laser_on(self):
         return self.__short_command(Hokuyo.LASER_ON, check_response=True)
 
+
     def laser_off(self):
         return self.__short_command(Hokuyo.LASER_OFF)
 
     def reset(self):
         return self.__short_command(Hokuyo.RESET)
+
+    def set_scip2(self):
+        "for URG-04LX"
+        return self.__short_command(Hokuyo.SET_SCIP2, check_response=False)
 
     def set_motor_speed(self, motor_speed=99):
         return self.__short_command('CR' + '%02d' % motor_speed + '\n', check_response=False)

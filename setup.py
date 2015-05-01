@@ -4,7 +4,7 @@
 try:
     from setuptools import setup
 except ImportError:
-    print 'No setuptools installed, use distutils'
+    print('No setuptools installed, use distutils')
     from distutils.core import setup
 
 with open('requirements.txt') as f:

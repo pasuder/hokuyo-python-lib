@@ -1,4 +1,5 @@
 import struct
+import sys
 
 __author__ = 'paoolo'
 
@@ -15,9 +16,14 @@ class SerialPort(object):
         return self.__checksum
 
     def read(self, size):
-        return self.__port.read(size)
+        char = self.__port.read(size)
+        if sys.version_info >= (3,0,0):
+            char = str(char, 'UTF-8')
+        return char
 
     def write(self, char):
+        if sys.version_info >= (3,0,0):
+            char = bytes(char, 'UTF-8')
         self.__port.write(char)
 
     def send_command(self, address, command):

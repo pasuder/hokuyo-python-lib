@@ -10,6 +10,4 @@ How to use (PyPi)
 
 Simply. Add to `requirements.txt`
 
-    hokuyo-python-lib
-
-Package available at https://pypi.python.org/pypi/hokuyo-python-lib
+    -e git+git://github.com/SuderPawel/hokuyo-python-lib#egg=hokuyo-python-lib

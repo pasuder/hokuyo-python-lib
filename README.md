@@ -1,10 +1,12 @@
 hokuyo-python-lib
 =================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/1feffae1edbc424790eb86d330042d7e)](https://www.codacy.com/app/SuderPawel/hokuyo-python-lib)
+[![Code Health](https://landscape.io/github/SuderPawel/hokuyo-python-lib/master/landscape.svg?style=flat)](https://landscape.io/github/SuderPawel/hokuyo-python-lib/master)
+
 [![Code Climate](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/badges/gpa.svg)](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib)
 [![Test Coverage](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/badges/coverage.svg)](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/coverage)
 [![Issue Count](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/badges/issue_count.svg)](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib)
-[![Code Health](https://landscape.io/github/SuderPawel/hokuyo-python-lib/master/landscape.svg?style=flat)](https://landscape.io/github/SuderPawel/hokuyo-python-lib/master)
 
 This library provides simple implementation of SCIP protocol used in Hokuyo laser ranger finder in python.
 

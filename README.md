@@ -1,12 +1,12 @@
 hokuyo-python-lib
 =================
 
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/1feffae1edbc424790eb86d330042d7e)](https://www.codacy.com/app/SuderPawel/hokuyo-python-lib)
-[![Code Health](https://landscape.io/github/SuderPawel/hokuyo-python-lib/master/landscape.svg?style=flat)](https://landscape.io/github/SuderPawel/hokuyo-python-lib/master)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/1feffae1edbc424790eb86d330042d7e)](https://www.codacy.com/app/pasuder/hokuyo-python-lib)
+[![Code Health](https://landscape.io/github/pasuder/hokuyo-python-lib/master/landscape.svg?style=flat)](https://landscape.io/github/pasuder/hokuyo-python-lib/master)
 
-[![Code Climate](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/badges/gpa.svg)](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib)
-[![Test Coverage](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/badges/coverage.svg)](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/coverage)
-[![Issue Count](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib/badges/issue_count.svg)](https://codeclimate.com/github/SuderPawel/hokuyo-python-lib)
+[![Code Climate](https://codeclimate.com/github/pasuder/hokuyo-python-lib/badges/gpa.svg)](https://codeclimate.com/github/pasuder/hokuyo-python-lib)
+[![Test Coverage](https://codeclimate.com/github/pasuder/hokuyo-python-lib/badges/coverage.svg)](https://codeclimate.com/github/pasuder/hokuyo-python-lib/coverage)
+[![Issue Count](https://codeclimate.com/github/pasuder/hokuyo-python-lib/badges/issue_count.svg)](https://codeclimate.com/github/pasuder/hokuyo-python-lib)
 
 This library provides simple implementation of SCIP protocol used in Hokuyo laser ranger finder in python.
 
@@ -17,4 +17,4 @@ How to use (PyPi)
 
 Simply. Add to `requirements.txt`
 
-    -e git+git://github.com/SuderPawel/hokuyo-python-lib#egg=hokuyo-python-lib
+    -e git+git://github.com/pasuder/hokuyo-python-lib#egg=hokuyo-python-lib
